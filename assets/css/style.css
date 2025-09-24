@@ -1,0 +1,23 @@
+.cabecalho_menu_link{
+    color: blue;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+.ford_ranger_inicial{
+    align-items: center;
+}
+
+.legenda_imagem_principal{
+    text-align: center;
+}
+
+.rodape_links_subtitulo{
+    color: white;
+}
+
+
+.rodape{
+    background-color: rgb(10, 10, 122);
+}
