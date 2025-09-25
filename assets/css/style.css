@@ -65,6 +65,16 @@ main p{
     margin-top: 10px;
 }
 
+.tabela_carros{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.botao_comprar{
+    color: blue;
+     border: 2px solid red;
+}
 
 
 .ford_ranger_inicial{
