@@ -1,23 +1,108 @@
-.cabecalho_menu_link{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, serif;
+}
+
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main p{
+    padding: 5px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 20px 15px;*/ 
+    border-bottom: solid 1px rgb(219, 219, 219);
+    height: 10vh;
+
+}
+
+.cabecalho_logo{
+    width: 200px;
+}
+.cabecalho_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: blue;
     font-size: 25px;
     text-decoration: none;
+    text-align: center;
+    margin-right: 200px;
+}
 
+.cabecalho_menu_link{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0 20px;
+    color: blue;
+ 
 }
 
 .ford_ranger_inicial{
     align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    padding: 0.1rem 5rem;
+}
+
+.ford_ranger_inicial_legenda{
+    align-items: center; 
+    display: flex;
+    /* Centraliza o conteúdo de texto/imagem dentro deste bloco */
+    text-align: center; 
+    justify-content: center;
 }
 
 .legenda_imagem_principal{
     text-align: center;
 }
 
-.rodape_links_subtitulo{
-    color: white;
-}
-
-
 .rodape{
     background-color: rgb(10, 10, 122);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 7px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.rodape_links_subtitulo{
+    color: white;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.rodape_links{
+    display: flex;
+    gap: 20px;
+}
+
+.logo_rodape{
+    margin-bottom: 5px;
 }
