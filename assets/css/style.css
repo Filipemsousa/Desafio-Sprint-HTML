@@ -36,7 +36,7 @@ main p{
 }
 
 .cabecalho_logo{
-    width: 200px;
+    width: 150px;
 }
 .cabecalho_menu{
     display: flex;
@@ -60,6 +60,12 @@ main p{
     color: blue;
  
 }
+
+.video_incoporado{
+    margin-top: 10px;
+}
+
+
 
 .ford_ranger_inicial{
     align-items: center;
@@ -94,15 +100,23 @@ main p{
 
 .rodape_links_subtitulo{
     color: white;
+    font-size: 15px;
     margin-top: 15px;
-    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .rodape_links{
     display: flex;
-    gap: 20px;
+    gap: 5px;
+}
+
+.rodape_links img{
+    width: 1.5em; /* Ou um valor fixo como 24px, 30px */
+    height: auto; /* Mantém a proporção */
+    vertical-align: middle; /* Ajuda a alinhar com o texto */
 }
 
 .logo_rodape{
     margin-bottom: 5px;
+    margin-right: 25px;
 }
