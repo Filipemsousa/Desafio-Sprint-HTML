@@ -71,9 +71,34 @@ main p{
     padding: 15px;
 }
 
-.botao_comprar{
-    color: blue;
-     border: 2px solid red;
+.botao_comparar{
+    color: white;
+    border: 2px solid rgb(49, 114, 236);
+    background-color: rgb(0, 110, 255);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 11px;
+    width: 12%;
+    cursor: pointer; 
+    transition: all 0.3s ease;
+}
+
+.botao_comparar:hover {
+    background-color: #2d59d4; /* Um tom de roxo mais escuro (índigo) */
+    transform: scale(1.05); /* Aumenta o tamanho do botão em 5% */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
+}
+
+.botao_checkbox{
+
+    height: 30px;
+    width: 30px;
+}
+
+.botao_texto{
+    font-size: 15px;
+    text-align: center;
 }
 
 
