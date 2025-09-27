@@ -25,6 +25,36 @@ main p{
     padding: 5px;
 }
 
+.formulario{
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario_itens{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+}
+
+
+#campoNome{
+    font-size: 20px;
+}
+#campoEmail{
+    font-size: 20px;
+}
+#campoTelefone{
+    font-size: 20px;
+}
+#campoSelecao{
+    font-size: 20px;
+}
+#campoMensagem{
+    font-size: 20px;
+}
+
+
 .cabecalho {
     display: flex;
     align-items: center;
@@ -67,8 +97,20 @@ main p{
 
 .tabela_carros{
     display: flex;
-    justify-content: space-between;
     padding: 15px;
+}
+
+.tabela_carros_imagens{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+
+.botao_checkbox{
+    display: flex;
+    flex-direction: row;
 }
 
 .botao_comparar{
@@ -86,6 +128,26 @@ main p{
 
 .botao_comparar:hover {
     background-color: #2d59d4; /* Um tom de roxo mais escuro (índigo) */
+    transform: scale(1.05); /* Aumenta o tamanho do botão em 5% */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
+}
+
+.botao_enviar{
+    color: white;
+    border: 0.5px solid rgb(49, 114, 236);
+    background-color: rgb(0, 110, 255);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 150px;
+    padding:5px;
+    width: 50%;
+    cursor: pointer; 
+    transition: all 0.3s ease;
+}
+
+.botao_enviar:hover{
+      background-color: #2d59d4; /* Um tom de roxo mais escuro (índigo) */
     transform: scale(1.05); /* Aumenta o tamanho do botão em 5% */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
 }

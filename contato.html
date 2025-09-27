@@ -22,10 +22,28 @@
 
         <div class="placeholder"></div>
     </header>
-    <main>
-
-      <h1>Página Contato</h1>
-
+    <main class="formulario">
+        <img src="assets/img/xls 2.2 diesel.jpg" alt="">
+        <form class="formulario_itens" action="" method="post">
+            <h1>Sobre Você</h1>
+            <label for="campoNome"></label>
+            <input type="text" id="campoNome" placeholder="NOME*">
+            <label for="campoEmail"></label>
+            <input type="email" id="campoEmail" placeholder="EMAIL*">
+            <label for="campoTelefone"></label>
+            <input type="number" id="campoTelefone" placeholder="TELEFONE*">
+            <label for="campoSelecao"></label>
+                <select name="" id="campoSelecao">
+                    <option value="0" selected disabled>TIPO DE CONTATO</option>
+                    <option value="1">ELOGIO</option>
+                    <option value="2">RECLAMAÇÃO</option>
+                    <option value="3">SOLICITAÇÃO</option>
+                </select>
+            <label for="campoMensagem"></label>
+            <input type="text" id="campoMensagem" placeholder="MENSAGEM*">
+        <h1 class="botao_enviar"><p class="botao_texto">Enviar</p></h1>   
+        </form>
+       
     </main>
 
 
@@ -41,7 +59,9 @@
 
 
         </div>
+        <h2 class="rodape_links_subtitulo">Todos os direitos reservados Ford 2025</h2>
         <img class="logo_rodape" src="assets/img/ford-96.png" alt="logo Ford rodape">
+        
     </footer>
 
 </body>
