@@ -131,6 +131,8 @@ input::placeholder {
 .tabela_carros_imagens{
     display: flex;
     flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
 }
 
 .tabela_carros_check_texto_info{
@@ -139,11 +141,17 @@ input::placeholder {
     flex-direction: row;
 }
 
-
+.tabela_separador{
+    display: flex;
+    align-items: row;
+}
 
 .tabela_carros_info{
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
+    align-items: end;
+    margin-left: 300px;
 }
 
 .tabela_carros_destaque{
