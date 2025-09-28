@@ -30,28 +30,51 @@ main p{
     flex-direction: row;
 }
 
+.formulario_titulo{
+    font-size: 18px;
+
+}
+
+.formulario_imagem{
+    width: 400px;
+}
+
 .formulario_itens{
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    width: 300px;
+    gap: 8px;
+    width: 350px;
+    
 }
 
+input::placeholder {
+  font-size: 16px; /* Altera o tamanho da fonte para 14 pixels */
+}
 
 #campoNome{
-    font-size: 20px;
+    font-size: 28px;
+    border-radius: 8px;   
+    padding: 3px;
 }
 #campoEmail{
-    font-size: 20px;
+    font-size: 28px;
+    border-radius: 8px;
+    padding: 3px;
 }
 #campoTelefone{
-    font-size: 20px;
+    font-size: 28px;
+    border-radius: 8px;
+    padding: 3px;
 }
 #campoSelecao{
     font-size: 20px;
+    border-radius: 8px;
+    padding: 3px;
 }
 #campoMensagem{
-    font-size: 20px;
+    font-size: 28px;
+    border-radius: 8px;
+    padding: 3px;
 }
 
 
@@ -95,6 +118,11 @@ main p{
     margin-top: 10px;
 }
 
+.tabela{
+    display: flex;
+    justify-content: space-between;
+}
+
 .tabela_carros{
     display: flex;
     padding: 15px;
@@ -102,14 +130,30 @@ main p{
 
 .tabela_carros_imagens{
     display: flex;
+    flex-direction: row;
+}
+
+.tabela_carros_check_texto_info{
+    display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
 
 
-.botao_checkbox{
+.tabela_carros_info{
     display: flex;
+    flex-direction: row;
+}
+
+.tabela_carros_destaque{
+    color: #2d59d4;
+}
+
+.botao_checkbox{
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
     flex-direction: row;
 }
 
@@ -139,9 +183,9 @@ main p{
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
-    margin-left: 150px;
+    margin-left: 104px;
     padding:5px;
-    width: 50%;
+    width: 70%;
     cursor: pointer; 
     transition: all 0.3s ease;
 }
@@ -215,5 +259,5 @@ main p{
 
 .logo_rodape{
     margin-bottom: 5px;
-    margin-right: 25px;
+    margin-right: 35px;
 }
