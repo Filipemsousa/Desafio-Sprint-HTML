@@ -28,9 +28,6 @@ main p{
 .formulario{
     display: flex;
     flex-direction: row;
-    position: relative;
-    top: -150px;
-
 }
 
 .formulario_titulo{
@@ -89,8 +86,7 @@ input::placeholder {
 .cabecalho {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /*padding: 20px 15px;*/ 
+    justify-content: space-between; 
     border-bottom: solid 1px rgb(219, 219, 219);
     height: 10vh;
     position:relative;
@@ -303,8 +299,144 @@ input::placeholder {
     margin-right: 35px;
 }
 
-@media screen and (max-width: 1020px) {
-   .flex{
-    flex-direction: column;
-   }
+@media (max-width: 1024px) {
+    /* Ajusta espaçamento do menu */
+    .cabecalho_menu {
+        margin-right: 20px;
+    }
+    .cabecalho_menu_link {
+        padding: 0 10px;
+        font-size: 22px;
+    }
+
+    .ford_ranger_inicial {
+        padding: 0;
+        width: 100%;
+    }
+
+    /* Reduz espaçamento na seção de comparação */
+    .tabela_carros_imagens {
+        gap: 15px; /* Reduz o espaço entre as imagens dos carros */
+    }
+    
+    /* Remove ajustes de posicionamento complexos e usa margem para aproximar */
+    .tabela_carros_info {
+        margin-left: 50px; /* Reduz a margem para telas menores */
+    }
+    #info_storm, #info_xls_diesel, #info_xl_cabine {
+        /* Garante que os ajustes individuais não causem problemas, ajusta levemente */
+        position: relative;
+        left: 0;
+    }
+
+    /* Ajusta o tamanho do botão para tablets */
+    .botao_comparar {
+        width: 18%; 
+    }
+}
+
+
+/* ========================================================================= */
+@media (max-width: 720px) {
+    /* --- Layout Geral e Imagem Principal --- */
+    /* Garante largura total e padding mínimo no container principal */
+    main {
+        padding: 10px;
+    }
+
+    /* A imagem principal deve ocupar a largura total do container */
+    .ford_ranger_inicial {
+        padding: 0;
+        width: 100%;
+    }
+    .ford_ranger_inicial img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* --- Cabeçalho (Empilhamento) --- */
+    .cabecalho {
+        flex-direction: column; /* Empilha logo e menu */
+        align-items: center;
+        height: auto;
+        padding-bottom: 5px;
+    }
+    .cabecalho_logo {
+        width: 120px;
+    }
+    .cabecalho_menu {
+        margin-right: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .cabecalho_menu_link {
+        font-size: 15px;
+        padding: 0 5px;
+    }
+
+    /* --- Formulário (Empilhamento) --- */
+    .formulario {
+        flex-direction: column; /* Empilha imagem e campos */
+        align-items: center;
+    }
+    .formulario_imagem {
+        width: 90%;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+    .formulario_itens {
+        width: 90%; /* Ocupa a maior parte da largura */
+        max-width: 350px;
+    }
+    .botao_enviar {
+        width: 100%;
+        margin-left: 0; /* Alinha o botão */
+    }
+
+    /* Ajusta o tamanho da fonte dos inputs */
+    #campoNome, #campoEmail, #campoTelefone, #campoMensagem {
+        font-size: 18px;
+    }
+
+    /* --- Tabela de Carros (Empilhamento) --- */
+    .tabela_carros {
+        flex-direction: column; /* Empilha os blocos de carro */
+        padding: 15px 0;
+    }
+    .tabela_carros_imagens {
+        flex-direction: column; /* Empilha as imagens dos carros */
+        align-items: center;
+    }
+    .tabela_carros_info {
+        /* Garante alinhamento central e vertical */
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        position: static;
+        top: auto;
+    }
+    .tabela_carros_info div {
+         margin-bottom: 15px; /* Espaço entre as informações dos carros */
+    }
+    .tabela_carros_check_texto_info {
+        /* Empilha checkbox e info de texto */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .botao_comparar {
+        width: 60%;
+        margin: 15px auto;
+        display: block; /* Garante que o botão seja centralizado */
+    }
+
+    /* --- Rodapé (Empilhamento) --- */
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .logo_rodape {
+        margin: 10px 0;
+    }
 }
