@@ -28,6 +28,9 @@ main p{
 .formulario{
     display: flex;
     flex-direction: row;
+    position: relative;
+    top: -150px;
+
 }
 
 .formulario_titulo{
@@ -85,6 +88,8 @@ input::placeholder {
     /*padding: 20px 15px;*/ 
     border-bottom: solid 1px rgb(219, 219, 219);
     height: 10vh;
+    position:relative;
+    z-index: 2;
 
 }
 
@@ -152,6 +157,23 @@ input::placeholder {
     flex-direction: row;
     align-items: end;
     margin-left: 300px;
+    position: relative;
+    top: 40px;
+}
+
+#info_storm{
+    position: relative;
+    left: 40px;
+}
+
+#info_xls_diesel{
+    position: relative;
+    left: 20px;
+}
+
+#info_xl_cabine{
+    position:relative;
+    left: 1px;
 }
 
 .tabela_carros_destaque{
