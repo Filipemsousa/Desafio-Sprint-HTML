@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, serif;
+    font-family: "Goldman", sans-serif;
 }
-
-
 body{
     box-sizing: border-box;
     display: flex;
@@ -303,18 +303,8 @@ input::placeholder {
     margin-right: 35px;
 }
 
-@media (max-width: 1200px) {
-    .cabecalho{
-         padding: 10%;  
-    }
-    .cabecalho__menu{
-        justify-content: center;
-    }
-    .apresentacao{
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-    .apresentacao__conteudo{
-        width: auto;
-    }
+@media screen and (max-width: 1020px) {
+   .flex{
+    flex-direction: column;
+   }
 }
