@@ -72,8 +72,13 @@ input::placeholder {
 #campoSelecao{
     font-size: 20px;
     border-radius: 8px;
-    padding: 3px;
+    padding: 10px;
+    color: rgb(112, 112, 112);
+    font-size: 16px;
+    text-align: left;
+    
 }
+
 #campoMensagem{
     font-size: 28px;
     border-radius: 8px;
@@ -287,7 +292,29 @@ input::placeholder {
     vertical-align: middle; /* Ajuda a alinhar com o texto */
 }
 
+.link_copyright{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
 .logo_rodape{
     margin-bottom: 5px;
     margin-right: 35px;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+         padding: 10%;  
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
 }
