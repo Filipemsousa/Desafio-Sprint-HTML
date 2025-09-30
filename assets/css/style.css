@@ -28,6 +28,9 @@ main p{
 .formulario{
     display: flex;
     flex-direction: row;
+    position: relative;
+    top: -50px;
+
 }
 
 .formulario_titulo{
@@ -86,7 +89,8 @@ input::placeholder {
 .cabecalho {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
+    /*padding: 20px 15px;*/ 
     border-bottom: solid 1px rgb(219, 219, 219);
     height: 10vh;
     position:relative;
@@ -141,10 +145,16 @@ input::placeholder {
     justify-content: space-between;
 }
 
+
+.tabela_carros_imagem_ranger{
+    width: 100%;
+}
+
 .tabela_carros_check_texto_info{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    width: 100%;
 }
 
 .tabela_separador{
@@ -299,6 +309,8 @@ input::placeholder {
     margin-right: 35px;
 }
 
+
+
 @media (max-width: 1024px) {
     /* Ajusta espaçamento do menu */
     .cabecalho_menu {
@@ -316,12 +328,17 @@ input::placeholder {
 
     /* Reduz espaçamento na seção de comparação */
     .tabela_carros_imagens {
-        gap: 15px; /* Reduz o espaço entre as imagens dos carros */
+        gap: 5px; /* Reduz o espaço entre as imagens dos carros */
     }
     
+    .tabela_carros_imagem_ranger{
+        width: 70%;
+    }
+
+
     /* Remove ajustes de posicionamento complexos e usa margem para aproximar */
     .tabela_carros_info {
-        margin-left: 50px; /* Reduz a margem para telas menores */
+        margin-left: px; /* Reduz a margem para telas menores */
     }
     #info_storm, #info_xls_diesel, #info_xl_cabine {
         /* Garante que os ajustes individuais não causem problemas, ajusta levemente */
@@ -400,13 +417,19 @@ input::placeholder {
 
     /* --- Tabela de Carros (Empilhamento) --- */
     .tabela_carros {
-        flex-direction: column; /* Empilha os blocos de carro */
+        flex-direction: row; /* Empilha os blocos de carro */
         padding: 15px 0;
     }
     .tabela_carros_imagens {
-        flex-direction: column; /* Empilha as imagens dos carros */
+        flex-direction: row; /* Empilha as imagens dos carros */
         align-items: center;
     }
+
+    .tabela_carros_imagem_ranger{
+        width: 50%;
+    }
+
+
     .tabela_carros_info {
         /* Garante alinhamento central e vertical */
         flex-direction: column;
@@ -420,9 +443,10 @@ input::placeholder {
     }
     .tabela_carros_check_texto_info {
         /* Empilha checkbox e info de texto */
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
+        font-size: 10px;
     }
     .botao_comparar {
         width: 60%;
